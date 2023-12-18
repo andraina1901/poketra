@@ -17,8 +17,8 @@ import java.util.Locale;
  */
 public class MonDate implements Serializable{
     private Date date;
-    private SimpleDateFormat formatDate = new SimpleDateFormat("yyyy-MM-dd HH.mm.ss.SSS");
-//    private SimpleDateFormat formatDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    // private SimpleDateFormat formatDate = new SimpleDateFormat("yyyy-MM-dd HH.mm.ss.SSS");
+   private SimpleDateFormat formatDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     public MonDate(){
         date = new Date();

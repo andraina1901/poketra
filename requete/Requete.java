@@ -411,8 +411,8 @@ public int[] getOrdreHafa(String[] col){
         Statement state = st.getStatmt(co);
         Statement statet = st.getStatmt(co);
         ResultSet requete = state.executeQuery("select*from "+table);
-        ResultSet requetes= statet.executeQuery("select sq"+table+".nextval from dual");
-//        ResultSet requetes = statet.executeQuery(" select nextval ('sq" + table +"')");
+        // ResultSet requetes= statet.executeQuery("select sq"+table+".nextval from dual");
+       ResultSet requetes = statet.executeQuery(" select nextval ('sq" + table +"')");
         requetes.next();
         int v = (int) requetes.getInt(1);
         

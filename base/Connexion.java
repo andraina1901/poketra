@@ -8,11 +8,11 @@ public class Connexion{
   public Connection SeConnecter(){
     try
     {
-      Class.forName("oracle.jdbc.driver.OracleDriver");
-      con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:liantsoa","tovo","tovo");
-      con.setAutoCommit(true);
-//        Class.forName("org.postgresql.Driver");
-//      con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres","postgres","root");
+      // Class.forName("oracle.jdbc.driver.OracleDriver");
+      // con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:liantsoa","tovo","tovo");
+      // con.setAutoCommit(true);
+       Class.forName("org.postgresql.Driver");
+     con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres","postgres","root");
     }
     catch(Exception e){ 
       System.out.println(e); 
